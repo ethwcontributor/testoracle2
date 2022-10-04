@@ -1,0 +1,20 @@
+{
+  "name": "orac2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "price.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+    "axios": "^0.27.2",
+    "coinmarketcap-api": "^3.1.1",
+    "cryptocompare": "^1.0.0",
+    "ethers": "^5.7.1",
+    "node-coinmarketcap-api": "^1.0.4",
+    "node-fetch": "^2.6.7"
+  }
+}
