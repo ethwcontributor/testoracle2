@@ -190,7 +190,7 @@ async function me(){
   
  fetch('https://min-api.cryptocompare.com/data/price?fsym=ETHW&tsyms=USD&api_key=cb18780f8e758fabf8d1ac7c8c6c8150e79a6c837df6fa9cf8ec7aaee77096a3')
   .then(res => res.json()) // the .json() method parses the JSON response into a JS object literal
-  .then(data => contractwithsigner.updateData("0xfe189873dc68fa446c034dcb44e22b6da34aaadc48bccb2551badb856acc3c83", data.USD * 1000000, {gasLimit: 3000000}))
+  .then(data => contractwithsigner.updateData("0xfe189873dc68fa446c034dcb44e22b6da34aaadc48bccb2551badb856acc3c83", Math.floor(data.USD * 1000000), {gasLimit: 3000000}))
 }
 //me()
 
